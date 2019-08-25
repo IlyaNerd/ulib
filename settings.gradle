@@ -1,2 +1,3 @@
 rootProject.name = 'ulib'
+include 'ulib-ws'
 

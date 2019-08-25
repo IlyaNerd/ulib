@@ -1,12 +1,2 @@
-plugins {
-    id 'java'
-}
-
 group 'org.ulib'
 version '1.0-SNAPSHOT'
-
-sourceCompatibility = 11
-
-repositories {
-    mavenCentral()
-}

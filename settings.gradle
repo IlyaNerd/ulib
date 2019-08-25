@@ -1,4 +1,5 @@
 rootProject.name = 'ulib'
 include 'ulib-ws'
 include 'db-schema'
+include 'ulib-react-native'
 

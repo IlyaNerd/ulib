@@ -6,6 +6,15 @@ spring:
     active: local
   jpa:
     show-sql: true
+  flyway:
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    locations: "filesystem:db-schema/sql/"
+    schemas: ${spring.datasource.hikari.schema}
+  datasource:
+    hikari:
+      schema: "public"
 
 logging:
   level:

@@ -1,0 +1,15 @@
+server:
+  port: 5000
+
+spring:
+  profiles:
+    active: local
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
+
+distance-threshold: 5000

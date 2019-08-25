@@ -1,3 +1,4 @@
 rootProject.name = 'ulib'
 include 'ulib-ws'
+include 'db-schema'
 

@@ -35,7 +35,7 @@ public class DefaultBooksService implements BooksService {
     @Override
     public BookDetailDto findBookById(Long id) {
         Optional<Book> optionalBook = booksRepository.findById(id);
-        if (!optionalBook.isPresent()) {
+        if (optionalBook.isEmpty()) {
             return null;
         }
         Book book = optionalBook.get();
@@ -45,7 +45,7 @@ public class DefaultBooksService implements BooksService {
     @Override
     public BookDetailDto findBookByIdWithClosestLibraries(Long id, double latitude, double longitude) {
         Optional<Book> optionalBook = booksRepository.findById(id);
-        if (!optionalBook.isPresent()) {
+        if (optionalBook.isEmpty()) {
             return null;
         }
         Book book = optionalBook.get();
